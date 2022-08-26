@@ -1,9 +1,10 @@
 import React from "react";
+import './Navbar.css'
 
 class Navbar extends React.Component {
     render() {
             return(
-                <div>
+                <div className="link_wrapper">
             <ul id = "nav">
 
                 <li><a href="#">Главная</a></li>
@@ -15,6 +16,10 @@ class Navbar extends React.Component {
                 <li><a href="#">Блог</a></li>
 
             </ul>
+            <div className="sign_in_button">
+            <button>Записаться на сеанс </button>
+            </div>
+            
         </div>
             );
     };
